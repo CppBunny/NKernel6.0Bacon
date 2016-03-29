@@ -1561,7 +1561,7 @@ static int mdp3_histo_ioctl(struct msm_fb_data_type *mfd, u32 cmd,
 }
 
 static int mdp3_ctrl_lut_update(struct msm_fb_data_type *mfd,
-				struct fb_cmap *cmap)
+				struct fb_cmap *cmap, void *setup)
 {
 	int rc = 0;
 	struct mdp3_session_data *mdp3_session = mfd->mdp.private1;

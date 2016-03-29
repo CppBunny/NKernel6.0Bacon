@@ -2096,6 +2096,8 @@ pre_init_exit:
 	return ret;
 }
 
+
+
 int msm_thermal_init(struct msm_thermal_data *pdata)
 {
 	int ret = 0;

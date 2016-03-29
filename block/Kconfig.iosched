@@ -11,7 +11,30 @@ config IOSCHED_NOOP
 	  memory devices, and specialised software or hardware environments
 	  that do their own scheduling and require only minimal assistance from
 	  the kernel.
+config IOSCHED_SIO
+	tristate "Simple I/O scheduler"
+	default y
+	---help---
+	A simple I/O scheduler
 
+
+config IOSCHED_FIOPS
+	tristate "Fiops I/O scheduler"
+	default y
+	---help---
+	The Fiops I/O scheduler
+
+config IOSCHED_TRIPNDROID
+	tristate "Tripndroid I/O scheduler"
+	default y
+	---help---
+	The Tripndroid I/O scheduler
+
+config IOSCHED_ZEN
+	tristate "Zen I/O scheduler"
+	default y
+	---help---
+	The Zen I/O scheduler
 config IOSCHED_TEST
 	tristate "Test I/O scheduler"
 	depends on DEBUG_FS
